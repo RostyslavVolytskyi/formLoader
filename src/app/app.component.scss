@@ -1,0 +1,26 @@
+.radio-btn-container {
+	display: flex;
+	justify-content: flex-end;
+
+	.radio-group {
+		display: flex;
+		flex-direction: column;
+	} 
+}
+
+
+
+.input-full-width {
+	width: 100%;
+}
+
+.main-container {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+
+	.items-placeholder {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}

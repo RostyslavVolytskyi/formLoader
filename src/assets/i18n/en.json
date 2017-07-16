@@ -1,0 +1,16 @@
+{
+    "WELCOME": "Welcome to app",
+    "CREATE_FORM": "Create from!",
+    "CREATE": "Create",
+    "SAVE": "Save",
+    "SEARCH_BY_NAME": "Search by name ... ",
+    "EDIT": "Edit",
+    "DONE": "Done",
+    "ENTER_VALID_NAME": "Please enter a valid name (only english letters)",
+    "ENTER_VALID_EMAIL": "Please enter a valid email address",
+    "NAME_REQUIRED": "Name is required",
+    "EMAIL_REQUIRED": "Email is required",
+    "OPEN": "Open",
+    "CLOSE": "Close",
+    "FORM_LOADER": "form loader"
+}

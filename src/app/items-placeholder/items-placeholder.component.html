@@ -1,0 +1,15 @@
+<div *ngFor="let index = index; let item of allItems | search:searchValue">
+  <md-card class="item-card">
+    <button class="delete-btn" (click)='deleteItem(index)'></button>
+    <md-card-header>
+      <md-card-title class="item-name">Name: {{item.name}}</md-card-title>
+    </md-card-header>
+    <md-card-content>
+    <span class="item-email">Email: {{item.email}}</span>
+    </md-card-content>
+    
+    <md-card-actions>
+      <button md-raised-button class="item-edit" (click)="editItem(item, index)">{{ 'EDIT' | translate }}</button>
+    </md-card-actions>
+  </md-card>
+</div>

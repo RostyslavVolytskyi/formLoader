@@ -1,0 +1,17 @@
+{
+	"APP": "Anwendung",
+    "WELCOME": "Willkommen zu Anwendung",
+    "CREATE_FORM": "Form erstellen!",
+    "CREATE": "erstellen",
+    "SAVE": "Speichern",
+    "SEARCH_BY_NAME": "Suche mit Name ... ",
+    "EDIT": "Bearbeiten",
+    "DONE": "Fertig",
+    "ENTER_VALID_NAME": "Bitte geben Sie einen gültigen Namen ein (nur englische Buchstaben)",
+    "ENTER_VALID_EMAIL": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "NAME_REQUIRED": "Name ist erforderlich",
+    "EMAIL_REQUIRED": "Email ist erforderlich",
+    "OPEN": "Öffnen",
+    "CLOSE": "Schließen",
+    "FORM_LOADER": "Formloader"
+}

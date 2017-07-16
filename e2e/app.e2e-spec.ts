@@ -1,14 +1,14 @@
-import { FormLoaderPage } from './app.po';
+// import { FormLoaderPage } from './app.po';
 
-describe('form-loader App', () => {
-  let page: FormLoaderPage;
+// describe('form-loader App', () => {
+//   let page: FormLoaderPage;
 
-  beforeEach(() => {
-    page = new FormLoaderPage();
-  });
+//   beforeEach(() => {
+//     page = new FormLoaderPage();
+//   });
 
-  it('should display welcome message', () => {
-    page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!!');
-  });
-});
+//   it('should display welcome message', () => {
+//     page.navigateTo();
+//     expect(page.getParagraphText()).toEqual('Welcome to app!!');
+//   });
+// });

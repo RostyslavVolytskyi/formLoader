@@ -1,0 +1,41 @@
+.item-card {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	border: 1px solid #4527A0;
+	border-radius: 3px;
+	box-shadow: 8px 8px 5px #616161;
+	background: rgba(186, 104, 200, .3);
+	padding: 10px;
+	margin: 10px 10px 0 0;
+	max-width: 300px;
+
+	.delete-btn {
+		position: absolute;
+		background-color: #ff4081;
+		border: none;
+		border-radius: 50%;
+		color: #ffffff;
+		top: 2px;
+		right: 2px;
+		width: 20px;
+		height: 20px;
+		&:after {
+			content: "✕";
+		}
+	}
+
+	.item-name {
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+
+	.item-email {
+		font-weight: 400;
+		margin-bottom: 5px;
+	}
+
+	.item-edit {
+		margin-top: 5px;
+	}
+}

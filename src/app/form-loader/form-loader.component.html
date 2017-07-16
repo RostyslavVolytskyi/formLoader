@@ -1,0 +1,48 @@
+<form class="form-loader-container">
+	<span class="form-name">{{ 'CREATE_FORM' | translate }}</span>
+
+	<md-input-container>
+	  <input mdInput placeholder="Name" #name required [formControl]="nameFormControl" [(ngModel)]="nameValue">
+	  <md-error *ngIf="nameFormControl.hasError('pattern')">
+	      {{ 'ENTER_VALID_NAME' | translate }}
+	    </md-error>
+	    <md-error *ngIf="nameFormControl.hasError('required')">
+	      {{ 'NAME_REQUIRED' | translate }}
+	    </md-error>
+	</md-input-container>
+
+	<md-input-container>
+	  <input mdInput placeholder="Email" #email required [formControl]="emailFormControl" [(ngModel)]="emailValue">
+    <md-error *ngIf="emailFormControl.hasError('pattern')">
+      {{ 'ENTER_VALID_EMAIL' | translate }}
+    </md-error>
+    <md-error *ngIf="emailFormControl.hasError('required')">
+      {{ 'EMAIL_REQUIRED' | translate }}
+    </md-error>
+	</md-input-container>
+
+	<button md-raised-button class="form-loader-button" *ngIf="!editMode && !saveMode && !doneBtn"
+		(click)="createItem(name.value, email.value)"
+		[disabled]="email.value.length == 0 ||
+		name.value.length == 0 ||
+		emailFormControl.hasError('required') || 
+		emailFormControl.hasError('pattern') ||
+		nameFormControl.hasError('pattern') ||
+		nameFormControl.hasError('required')">
+		{{ 'CREATE' | translate }}
+	</button>
+	<button md-raised-button class="form-loader-button" *ngIf="editMode" (click)="editItem()">
+		{{ 'EDIT' | translate }}
+	</button>
+	<button md-raised-button class="form-loader-button" *ngIf="saveMode" (click)="saveItem()"
+		[disabled]="emailFormControl.hasError('required') || 
+		emailFormControl.hasError('pattern') ||
+		nameFormControl.hasError('pattern') ||
+		nameFormControl.hasError('required')">
+		{{ 'SAVE' | translate }}
+	</button>
+	<button md-raised-button class="form-loader-button" *ngIf="doneBtn" (click)="closeForm()">
+		{{ 'DONE' | translate }}
+	</button>
+
+</form>
