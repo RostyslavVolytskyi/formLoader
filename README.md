@@ -1,15 +1,17 @@
-# FormLoader
+# Form Loader
 
 In this app User can create card with 'name' and 'email' fields. Card can be created with the help of 'Form loader' component. User can click on 'Edit button' in card and edit card's fileds in a 'Form loader', after that he can save this card with new inputs data. User can delete selected card. 'Name' field has validation: only letters, 'Email' filed has email validation rule.
 User can type in a search input card name and all appropriate cards will be displayed with this search term name. 
 User can switch between English and German languages.
 
 Run application:
-npm install -g @angular/cli
-Clone project (git clone ...)
-cd formLoader
-npm install
-ng serve ---> Navigate to `http://localhost:4200/` (by default)
+```
+1. npm install -g @angular/cli
+2. Clone project (git clone https://github.com/Rostyy/formLoader.git)
+3. cd formLoader
+4. npm install
+5. ng serve ---> Navigate to `http://localhost:4200/` (by default)
+```
 (was developed in Node -v 6.0.0)
 
 Tech-stack:
