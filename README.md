@@ -2,6 +2,8 @@
 
 In this app User can create card with 'name' and 'email' fields. Card can be created with the help of 'Form loader' component. User can click on 'Edit button' in card and edit card's fileds in a 'Form loader', after that he can save this card with new inputs data. User can delete selected card. 'Name' field has validation: only letters, 'Email' field has email validation rule. When validation fails User can't click the 'Save' or 'Edit' button in 'Form loader'. User can type in a search input card name and all appropriate cards will be displayed with this search term name. User can switch between English and German languages. Only simple styles were applied in this application. Main components were divided by feature modules.
 
+Application was deployed on Heroku: [Form Loader Web](https://form-loader.herokuapp.com/)
+
 Run application:
 ```
 1. npm install -g @angular/cli
